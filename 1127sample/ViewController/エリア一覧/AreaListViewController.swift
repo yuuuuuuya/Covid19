@@ -157,7 +157,7 @@ extension AreaListViewController: UITableViewDelegate {
             return
         }
         /// セル表示Bool値の切り替え
-        presenter.setAreaSectionArrayIsshownToggle(areaNum: section)
+//        presenter.setAreaSectionArrayIsshownToggle(areaNum: section)
         
         /// セルの表示
         myTableView.beginUpdates()
