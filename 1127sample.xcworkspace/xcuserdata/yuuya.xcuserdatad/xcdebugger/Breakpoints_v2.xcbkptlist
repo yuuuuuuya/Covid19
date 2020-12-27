@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EE69B2EB-6BED-439B-8D12-BD685F531D66"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2ED29A9B-5068-47A0-BEDA-2445247F6DDB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "1127sample/ViewController/&#x30a8;&#x30ea;&#x30a2;&#x4e00;&#x89a7;/AreaListPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2ED29A9B-5068-47A0-BEDA-2445247F6DDB - 1994ab06b940b16d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_127sample.AreaListPresenter.init() -&gt; _127sample.AreaListPresenter"
+                  moduleName = "1127sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuuya/Documents/learning/1127sample/ViewController/%E3%82%A8%E3%83%AA%E3%82%A2%E4%B8%80%E8%A6%A7/AreaListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1354">
+               </Location>
+               <Location
+                  uuid = "2ED29A9B-5068-47A0-BEDA-2445247F6DDB - 1994ab06b940b16d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_127sample.AreaListPresenter.init() -&gt; _127sample.AreaListPresenter"
+                  moduleName = "1127sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuuya/Documents/learning/1127sample/ViewController/%E3%82%A8%E3%83%AA%E3%82%A2%E4%B8%80%E8%A6%A7/AreaListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1748">
+               </Location>
+               <Location
+                  uuid = "2ED29A9B-5068-47A0-BEDA-2445247F6DDB - 1994ab06b940b16d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_127sample.AreaListPresenter.init() -&gt; _127sample.AreaListPresenter"
+                  moduleName = "1127sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuuya/Documents/learning/1127sample/ViewController/%E3%82%A8%E3%83%AA%E3%82%A2%E4%B8%80%E8%A6%A7/AreaListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "2359">
+               </Location>
+               <Location
+                  uuid = "2ED29A9B-5068-47A0-BEDA-2445247F6DDB - 1994ab06b940b16d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_127sample.AreaListPresenter.init() -&gt; _127sample.AreaListPresenter"
+                  moduleName = "1127sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuuya/Documents/learning/1127sample/ViewController/%E3%82%A8%E3%83%AA%E3%82%A2%E4%B8%80%E8%A6%A7/AreaListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "2944">
+               </Location>
+               <Location
+                  uuid = "2ED29A9B-5068-47A0-BEDA-2445247F6DDB - 1994ab06b940b16d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_127sample.AreaListPresenter.init() -&gt; _127sample.AreaListPresenter"
+                  moduleName = "1127sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuuya/Documents/learning/1127sample/ViewController/%E3%82%A8%E3%83%AA%E3%82%A2%E4%B8%80%E8%A6%A7/AreaListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "3529">
+               </Location>
+               <Location
+                  uuid = "2ED29A9B-5068-47A0-BEDA-2445247F6DDB - 1994ab06b940b16d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_127sample.AreaListPresenter.init() -&gt; _127sample.AreaListPresenter"
+                  moduleName = "1127sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuuya/Documents/learning/1127sample/ViewController/%E3%82%A8%E3%83%AA%E3%82%A2%E4%B8%80%E8%A6%A7/AreaListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "4114">
+               </Location>
+               <Location
+                  uuid = "2ED29A9B-5068-47A0-BEDA-2445247F6DDB - 1994ab06b940b16d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_127sample.AreaListPresenter.init() -&gt; _127sample.AreaListPresenter"
+                  moduleName = "1127sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuuya/Documents/learning/1127sample/ViewController/%E3%82%A8%E3%83%AA%E3%82%A2%E4%B8%80%E8%A6%A7/AreaListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "4699">
+               </Location>
+               <Location
+                  uuid = "2ED29A9B-5068-47A0-BEDA-2445247F6DDB - 1994ab06b940b16d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_127sample.AreaListPresenter.init() -&gt; _127sample.AreaListPresenter"
+                  moduleName = "1127sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuuya/Documents/learning/1127sample/ViewController/%E3%82%A8%E3%83%AA%E3%82%A2%E4%B8%80%E8%A6%A7/AreaListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "5263">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AEDBFB5-99B4-4983-AEF4-89F01ACE28A4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "1127sample/ViewController/&#x30a8;&#x30ea;&#x30a2;&#x4e00;&#x89a7;/AreaListPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "communicationAPI(sucsess:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4AEDBFB5-99B4-4983-AEF4-89F01ACE28A4 - f89e39a150ea8929"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in _127sample.AreaListPresenter.communicationAPI(sucsess: () -&gt; ()) -&gt; ()"
+                  moduleName = "1127sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuuya/Documents/learning/1127sample/ViewController/%E3%82%A8%E3%83%AA%E3%82%A2%E4%B8%80%E8%A6%A7/AreaListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "495">
+               </Location>
+               <Location
+                  uuid = "4AEDBFB5-99B4-4983-AEF4-89F01ACE28A4 - fddfbd4f05e3adfd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (_127sample.ResponseData) -&gt; () in closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in _127sample.AreaListPresenter.communicationAPI(sucsess: () -&gt; ()) -&gt; ()"
+                  moduleName = "1127sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuuya/Documents/learning/1127sample/ViewController/%E3%82%A8%E3%83%AA%E3%82%A2%E4%B8%80%E8%A6%A7/AreaListPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "238">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -21,14 +21,28 @@ class AreaListPresenter: NSObject {
     ///セット
     override init() {
         /// エリア一覧の配列に挿入
-        covid19Array.append(Covid19ReportStruct(areaName: "北海道", areaID: 0, todofukenID: 1, responseData: nil))
-        covid19Array.append(Covid19ReportStruct(areaName: "東北", areaID: 1, todofukenID: 2, responseData: nil))
-        covid19Array.append(Covid19ReportStruct(areaName: "東北", areaID: 2, todofukenID: 3, responseData: nil))
-        covid19Array.append(Covid19ReportStruct(areaName: "東北", areaID: 2, todofukenID: 4, responseData: nil))
-        covid19Array.append(Covid19ReportStruct(areaName: "東北", areaID: 2, todofukenID: 5, responseData: nil))
-        covid19Array.append(Covid19ReportStruct(areaName: "東北", areaID: 2, todofukenID: 6, responseData: nil))
-        covid19Array.append(Covid19ReportStruct(areaName: "東北", areaID: 2, todofukenID: 7, responseData: nil))
-        covid19Array.append(Covid19ReportStruct(areaName: "関東", areaID: 2, todofukenID: 8, responseData: nil))
+        for i in 1...47 {
+            switch i {
+            case 1:
+                covid19Array.append(Covid19ReportStruct(areaName: "北海道", areaID: 0, todofukenID: i, responseData: nil))
+            case 2...7:
+                covid19Array.append(Covid19ReportStruct(areaName: "東北",  areaID: 1, todofukenID: i, responseData: nil))
+            case 8...14:
+                covid19Array.append(Covid19ReportStruct(areaName: "関東",  areaID: 2, todofukenID: i, responseData: nil))
+            case 15...23:
+                covid19Array.append(Covid19ReportStruct(areaName: "中部",  areaID: 3, todofukenID: i, responseData: nil))
+            case 24...30:
+                covid19Array.append(Covid19ReportStruct(areaName: "近畿",  areaID: 4, todofukenID: i, responseData: nil))
+            case 31...35:
+                covid19Array.append(Covid19ReportStruct(areaName: "中国",  areaID: 5, todofukenID: i, responseData: nil))
+            case 36...39:
+                covid19Array.append(Covid19ReportStruct(areaName: "四国",  areaID: 6, todofukenID: i, responseData: nil))
+            case 40...47:
+                covid19Array.append(Covid19ReportStruct(areaName: "九州",  areaID: 7, todofukenID: i, responseData: nil))
+            default:
+                print("error:covid19arrayに挿入失敗")
+            }
+        }
     }
     
     //MARK: - Method
@@ -42,21 +56,15 @@ class AreaListPresenter: NSObject {
             do{
                 let decodeData = try JSONDecoder().decode([ResponseData].self, from: data)
                 
-                //レスポンスのidの値とエリア一覧のtodofukenIDの値が一致したら、レスポンスのデータをエリア一覧に代入
-                decodeData.forEach{
-                    
+                //レスポンスのidの値とエリア一覧のtodofukenIDの値をマッピング
+                decodeData.forEach{ decodeDataElement in
                     var responseID = 0
-                    responseID = $0.id
-                    var array = self.covid19Array.filter{
-                        $0.todofukenID == responseID
+                    responseID = decodeDataElement.id
+                    var array = self.covid19Array.filter{ covid19ArrayElement in
+                        covid19ArrayElement.todofukenID == responseID
                     }
-                    //TODO: covid19Arrayを10以上作成した場合にif文を削除
-                    if responseID < 9{
-                        array[0].responseData = $0
+                        array[0].responseData = decodeDataElement
                         print(array[0])
-                    }else {
-                        print("responseIDが10以上")
-                    }
                 }
             }catch let error{
                 print(error)
