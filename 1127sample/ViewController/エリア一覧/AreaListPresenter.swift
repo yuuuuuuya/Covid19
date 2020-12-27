@@ -33,11 +33,6 @@ class AreaListPresenter: NSObject {
     
     //MARK: - Method
     
-    /// APIレスポンスのJsonデータと、covid19Arrayの配列をループ回し、同じidを見つけたらcovid19Arrayの各要素に入れる
-    func  setAPIResponseData() {
-
-        }
-    
     ///covid19のAPIに通信
     func communicationAPI(sucsess: @escaping () -> () ) {
         AF.request("https://covid19-japan-web-api.now.sh/api/v1/prefectures").responseJSON { response in
@@ -47,18 +42,22 @@ class AreaListPresenter: NSObject {
             do{
                 let decodeData = try JSONDecoder().decode([ResponseData].self, from: data)
                 
+                //レスポンスのidの値とエリア一覧のtodofukenIDの値が一致したら、レスポンスのデータをエリア一覧に代入
                 decodeData.forEach{
                     
-                    if $0.id == 0{
-                        covid19Array.forEach{
-                            if $0.todofukenID == 0{
-                                $0.a
-                            }
-                        }
+                    var responseID = 0
+                    responseID = $0.id
+                    var array = self.covid19Array.filter{
+                        $0.todofukenID == responseID
                     }
-                        
+                    //TODO: covid19Arrayを10以上作成した場合にif文を削除
+                    if responseID < 9{
+                        array[0].responseData = $0
+                        print(array[0])
+                    }else {
+                        print("responseIDが10以上")
+                    }
                 }
-                
             }catch let error{
                 print(error)
             }
