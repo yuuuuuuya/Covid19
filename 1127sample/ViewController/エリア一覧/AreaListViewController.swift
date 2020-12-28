@@ -116,14 +116,14 @@ extension AreaListViewController: UITableViewDataSource {
     }
   
     ///セクションのタイトル
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return presenter.getAreaName(areaNum: section)
-//    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return presenter.getAreaName(areaNum: section)
+    }
     
     ///セクションの数
     func numberOfSections(in tableView: UITableView) -> Int {
-//        return presenter.getAreaNum()
-        return 1
+        print(presenter.getAreaNum())
+        return presenter.getAreaNum()
     }
 }
 

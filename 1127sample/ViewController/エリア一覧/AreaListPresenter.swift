@@ -64,7 +64,6 @@ class AreaListPresenter: NSObject {
                         covid19ArrayElement.todofukenID == responseID
                     }
                         array[0].responseData = decodeDataElement
-                        print(array[0])
                 }
             }catch let error{
                 print(error)
@@ -107,14 +106,26 @@ class AreaListPresenter: NSObject {
 //    }
     
     /// エリア名の取得
-//    func getAreaName(areaNum: Int) -> String {
-//        return areaSectionArray[areaNum].areaName
-//    }
+    func getAreaName(areaNum: Int) -> String {
+        var areaName = ""
+        covid19Array.forEach{
+            if $0.areaID == areaNum{
+                areaName = $0.areaName
+            }
+        }
+        return areaName
+    }
     
     ///　エリア数の取得
-//    func getAreaNum() -> Int {
-//        return areaSectionArray.count
-//    }
+    func getAreaNum() -> Int {
+        var maxAreaID = 0
+        covid19Array.forEach{
+            if maxAreaID < $0.areaID{
+                maxAreaID = $0.areaID
+            }
+        }
+        return maxAreaID + 1
+    }
     
     /// AreaSectionArrayのisShownのtoggle
     func setAreaSectionArrayIsshownToggle(areaNum: Int){
