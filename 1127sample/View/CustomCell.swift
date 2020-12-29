@@ -29,14 +29,19 @@ class CustomCell: UITableViewCell {
     }
     
     // MARK: - Method
+
+    /// ラベルの文字変更
     func setLabelText(response: Covid19ReportStruct) {
         guard let responseDate = response.responseData else {
             return
         }
         todoufukenLabel.text = response.responseData?.name_ja
+        /// セルの再利用防止
+        kansennshaLabel.textColor = .black
+        /// 感染者数5000人以上は赤文字
         if responseDate.cases > 5000{
             kansennshaLabel.textColor = .red
         }
-        kansennshaLabel.text = String(responseDate.cases)
+        kansennshaLabel.text = "感染者数:\(String(responseDate.cases))"
     }
 }

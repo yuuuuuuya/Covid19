@@ -57,17 +57,12 @@ class AreaListPresenter: NSObject {
                 let decodeData = try JSONDecoder().decode([ResponseData].self, from: data)
                 
                 //レスポンスのidの値とエリア一覧のtodofukenIDの値をマッピング
-                decodeData.forEach{ decodeDataElement in
-                    var responseID = 0
-                    responseID = decodeDataElement.id
-                    self.covid19Array.forEach{ covid19ArrayElement in
-                        if covid19ArrayElement.todofukenID == responseID{
-                            
-//                            covid19Array. = decodeDataElement
-                            print(self.covid19Array.enumerated())
+                for i in 0...(self.covid19Array.count - 1) {
+                    decodeData.forEach{
+                        if self.covid19Array[i].todofukenID == $0.id {
+                            self.covid19Array[i].responseData = $0
                         }
                     }
-                    
                 }
             }catch let error{
                 print(error)

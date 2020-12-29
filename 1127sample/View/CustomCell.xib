@@ -15,21 +15,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="677" height="118"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaH-tB-ndR">
-                        <rect key="frame" x="40" y="49" width="183" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaH-tB-ndR">
+                        <rect key="frame" x="39" y="48.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFq-cW-lTZ">
-                        <rect key="frame" x="446" y="48" width="179" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFq-cW-lTZ">
+                        <rect key="frame" x="583" y="48.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="aaH-tB-ndR" firstAttribute="leading" secondItem="8Zm-SM-f1M" secondAttribute="leading" constant="39" id="MJO-MW-VFz"/>
+                    <constraint firstItem="uFq-cW-lTZ" firstAttribute="centerY" secondItem="8Zm-SM-f1M" secondAttribute="centerY" id="OKA-rt-TNn"/>
+                    <constraint firstAttribute="trailing" secondItem="uFq-cW-lTZ" secondAttribute="trailing" constant="52" id="Xja-iS-vtX"/>
+                    <constraint firstItem="aaH-tB-ndR" firstAttribute="centerY" secondItem="8Zm-SM-f1M" secondAttribute="centerY" id="cns-Lp-CBv"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="kansennshaLabel" destination="uFq-cW-lTZ" id="FiM-ZD-WyT"/>

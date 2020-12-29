@@ -106,11 +106,6 @@ extension AreaListViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             return cell }
         let todofukenDetailforCell = presenter.getResponse(areaNum: indexPath.section, row: indexPath.row)
-        
-        //セル再利用防止
-//        cell.kansennshaLabel.text = ""
-//        cell.kansennshaLabel.text = ""
-//        cell.kansennshaLabel.textColor = .black
         cell.setLabelText(response: todofukenDetailforCell)
         return cell
     }
