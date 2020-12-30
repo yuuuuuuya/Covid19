@@ -23,7 +23,6 @@
 		C7146C6E2592F19F00EB992A /* AreaListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C6D2592F19F00EB992A /* AreaListPresenter.swift */; };
 		C7146C702592F1C600EB992A /* AreaListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C6F2592F1C600EB992A /* AreaListModel.swift */; };
 		C7146C732592F20A00EB992A /* KenDetailsReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C722592F20A00EB992A /* KenDetailsReportViewController.swift */; };
-		C7146C782592F28E00EB992A /* AreaSectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C772592F28E00EB992A /* AreaSectionList.swift */; };
 		C7146C7A25930EE500EB992A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7146C7925930EE500EB992A /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +71,6 @@
 		C7146C6D2592F19F00EB992A /* AreaListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListPresenter.swift; sourceTree = "<group>"; };
 		C7146C6F2592F1C600EB992A /* AreaListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListModel.swift; sourceTree = "<group>"; };
 		C7146C722592F20A00EB992A /* KenDetailsReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenDetailsReportViewController.swift; sourceTree = "<group>"; };
-		C7146C772592F28E00EB992A /* AreaSectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaSectionList.swift; sourceTree = "<group>"; };
 		C7146C7925930EE500EB992A /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		FEB4676DEECABBC3328104EB /* Pods-1127sample-1127sampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1127sample-1127sampleUITests.release.xcconfig"; path = "Target Support Files/Pods-1127sample-1127sampleUITests/Pods-1127sample-1127sampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,14 +141,14 @@
 		C7021D772570C01A00CFB3EC /* 1127sample */ = {
 			isa = PBXGroup;
 			children = (
-				C7146C672592F0AC00EB992A /* ViewController */,
-				C7146C662592F09A00EB992A /* View */,
-				C7146C612592E96600EB992A /* Model */,
 				C7021D782570C01A00CFB3EC /* AppDelegate.swift */,
-				C7021D7A2570C01A00CFB3EC /* SceneDelegate.swift */,
 				C7021D812570C01B00CFB3EC /* Assets.xcassets */,
-				C7021D832570C01B00CFB3EC /* LaunchScreen.storyboard */,
 				C7021D862570C01B00CFB3EC /* Info.plist */,
+				C7021D832570C01B00CFB3EC /* LaunchScreen.storyboard */,
+				C7146C612592E96600EB992A /* Model */,
+				C7021D7A2570C01A00CFB3EC /* SceneDelegate.swift */,
+				C7146C662592F09A00EB992A /* View */,
+				C7146C672592F0AC00EB992A /* ViewController */,
 			);
 			path = 1127sample;
 			sourceTree = "<group>";
@@ -177,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				C7146C742592F23A00EB992A /* API */,
-				C7146C772592F28E00EB992A /* AreaSectionList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,10 +200,10 @@
 		C7146C6A2592F16600EB992A /* エリア一覧 */ = {
 			isa = PBXGroup;
 			children = (
+				C7146C6F2592F1C600EB992A /* AreaListModel.swift */,
+				C7146C6D2592F19F00EB992A /* AreaListPresenter.swift */,
 				C7146C6B2592F17800EB992A /* AreaListViewController.swift */,
 				C7021D7E2570C01A00CFB3EC /* Main.storyboard */,
-				C7146C6D2592F19F00EB992A /* AreaListPresenter.swift */,
-				C7146C6F2592F1C600EB992A /* AreaListModel.swift */,
 			);
 			path = "エリア一覧";
 			sourceTree = "<group>";
@@ -485,7 +482,6 @@
 				C7021D7B2570C01A00CFB3EC /* SceneDelegate.swift in Sources */,
 				C7146C692592F10B00EB992A /* CustomCell.swift in Sources */,
 				C7146C632592E97F00EB992A /* ResponseListCovid19API.swift in Sources */,
-				C7146C782592F28E00EB992A /* AreaSectionList.swift in Sources */,
 				C7146C6E2592F19F00EB992A /* AreaListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

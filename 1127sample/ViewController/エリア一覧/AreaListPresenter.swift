@@ -24,21 +24,21 @@ class AreaListPresenter: NSObject {
         for i in 1...47 {
             switch i {
             case 1:
-                covid19Array.append(Covid19ReportStruct(areaName: "北海道", areaID: 0, todofukenID: i, responseData: nil))
+                covid19Array.append(Covid19ReportStruct(areaName: "北海道", areaID: 0, todofukenID: i, isShown: true, responseData: nil))
             case 2...7:
-                covid19Array.append(Covid19ReportStruct(areaName: "東北",  areaID: 1, todofukenID: i, responseData: nil))
+                covid19Array.append(Covid19ReportStruct(areaName: "東北",  areaID: 1, todofukenID: i, isShown: false, responseData: nil))
             case 8...14:
-                covid19Array.append(Covid19ReportStruct(areaName: "関東",  areaID: 2, todofukenID: i, responseData: nil))
+                covid19Array.append(Covid19ReportStruct(areaName: "関東",  areaID: 2, todofukenID: i, isShown: false, responseData: nil))
             case 15...23:
-                covid19Array.append(Covid19ReportStruct(areaName: "中部",  areaID: 3, todofukenID: i, responseData: nil))
+                covid19Array.append(Covid19ReportStruct(areaName: "中部",  areaID: 3, todofukenID: i, isShown: false, responseData: nil))
             case 24...30:
-                covid19Array.append(Covid19ReportStruct(areaName: "近畿",  areaID: 4, todofukenID: i, responseData: nil))
+                covid19Array.append(Covid19ReportStruct(areaName: "近畿",  areaID: 4, todofukenID: i, isShown: false,responseData: nil))
             case 31...35:
-                covid19Array.append(Covid19ReportStruct(areaName: "中国",  areaID: 5, todofukenID: i, responseData: nil))
+                covid19Array.append(Covid19ReportStruct(areaName: "中国",  areaID: 5, todofukenID: i, isShown: false, responseData: nil))
             case 36...39:
-                covid19Array.append(Covid19ReportStruct(areaName: "四国",  areaID: 6, todofukenID: i, responseData: nil))
+                covid19Array.append(Covid19ReportStruct(areaName: "四国",  areaID: 6, todofukenID: i, isShown: false, responseData: nil))
             case 40...47:
-                covid19Array.append(Covid19ReportStruct(areaName: "九州",  areaID: 7, todofukenID: i, responseData: nil))
+                covid19Array.append(Covid19ReportStruct(areaName: "九州",  areaID: 7, todofukenID: i, isShown: false, responseData: nil))
             default:
                 print("error:covid19arrayに挿入失敗")
             }
@@ -72,9 +72,11 @@ class AreaListPresenter: NSObject {
     }
     
     /// tableviewのrowの数
-    func getTodofukensuu(areaNum: Int) -> Int {
+    func getIsShownTodofukensuu(areaNum: Int) -> Int {
         let filterCovid19Array = covid19Array.filter{
             $0.areaID == areaNum
+        }.filter{
+            $0.isShown == true
         }
         return filterCovid19Array.count
     }
@@ -110,8 +112,12 @@ class AreaListPresenter: NSObject {
     }
     
     /// AreaSectionArrayのisShownのtoggle
-    func setAreaSectionArrayIsshownToggle(areaNum: Int){
-//        return areaSectionArray[areaNum].isShown.toggle()
+    func Covid19ReportStructIsshownToggle(areaNum: Int){
+        for i in 0...covid19Array.count - 1 {
+            if covid19Array[i].areaID == areaNum {
+                covid19Array[i].isShown.toggle()
+            }
+        }
     }
 //}
 }

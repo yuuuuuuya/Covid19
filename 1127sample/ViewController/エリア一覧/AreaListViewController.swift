@@ -97,7 +97,7 @@ extension AreaListViewController: UITableViewDataSource {
     
     ///Rowの数
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.getTodofukensuu(areaNum: section)
+        return presenter.getIsShownTodofukensuu(areaNum: section)
     }
     
     ///セルの表示内容
@@ -151,7 +151,7 @@ extension AreaListViewController: UITableViewDelegate {
             return
         }
         /// セル表示Bool値の切り替え
-//        presenter.setAreaSectionArrayIsshownToggle(areaNum: section)
+        presenter.Covid19ReportStructIsshownToggle(areaNum: section)
         
         /// セルの表示
         myTableView.beginUpdates()

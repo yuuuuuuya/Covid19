@@ -9,6 +9,7 @@ struct Covid19ReportStruct {
     var areaName: String
     var areaID: Int /// エリアを区別するID。IndexPath.sectionと合わせている
     var todofukenID: Int
+    var isShown: Bool /// trueがtableviewに表示
     var responseData :ResponseData?
 }
 
