@@ -131,8 +131,7 @@ extension AreaListViewController: UITableViewDelegate {
         guard let kenDetailsReportVC = kenDetailsReportVCStoryboard.instantiateViewController(identifier: "KenDetailsReportViewController") as? KenDetailsReportViewController else {
             return
         }
-        kenDetailsReportVC.receiveCellSection = indexPath.section
-        kenDetailsReportVC.receiveCellRow = indexPath.row
+        kenDetailsReportVC.receiveCell = presenter.getResponse(areaNum: indexPath.section, row: indexPath.row)
         navigationController?.pushViewController(kenDetailsReportVC, animated: true)
     }
     

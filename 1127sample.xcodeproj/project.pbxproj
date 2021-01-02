@@ -10,6 +10,7 @@
 		6A4820A462791BE918A6236B /* Pods_1127sampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF2A293E4A7A1213A9B021D /* Pods_1127sampleTests.framework */; };
 		8FE218A0D958C01BA0043560 /* Pods_1127sample_1127sampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9EB964804BB37C74D1A869 /* Pods_1127sample_1127sampleUITests.framework */; };
 		A264CD3FA81B4C58FC365C9C /* Pods_1127sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D0C642F3475948A496BA6B /* Pods_1127sample.framework */; };
+		C6DF687825A01393007C5BE7 /* KenDetailsReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DF687725A01393007C5BE7 /* KenDetailsReport.storyboard */; };
 		C7021D792570C01A00CFB3EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7021D782570C01A00CFB3EC /* AppDelegate.swift */; };
 		C7021D7B2570C01A00CFB3EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7021D7A2570C01A00CFB3EC /* SceneDelegate.swift */; };
 		C7021D802570C01A00CFB3EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7021D7E2570C01A00CFB3EC /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		C7146C692592F10B00EB992A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C682592F10B00EB992A /* CustomCell.swift */; };
 		C7146C6C2592F17800EB992A /* AreaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C6B2592F17800EB992A /* AreaListViewController.swift */; };
 		C7146C6E2592F19F00EB992A /* AreaListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C6D2592F19F00EB992A /* AreaListPresenter.swift */; };
-		C7146C702592F1C600EB992A /* AreaListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C6F2592F1C600EB992A /* AreaListModel.swift */; };
 		C7146C732592F20A00EB992A /* KenDetailsReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C722592F20A00EB992A /* KenDetailsReportViewController.swift */; };
 		C7146C7A25930EE500EB992A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7146C7925930EE500EB992A /* CustomCell.xib */; };
 /* End PBXBuildFile section */
@@ -52,6 +52,7 @@
 		62D0C642F3475948A496BA6B /* Pods_1127sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1127sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5324030270392BB5AE75A9 /* Pods-1127sampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1127sampleTests.debug.xcconfig"; path = "Target Support Files/Pods-1127sampleTests/Pods-1127sampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4ADF8AEB9802030F2DE47D9 /* Pods-1127sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1127sample.debug.xcconfig"; path = "Target Support Files/Pods-1127sample/Pods-1127sample.debug.xcconfig"; sourceTree = "<group>"; };
+		C6DF687725A01393007C5BE7 /* KenDetailsReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KenDetailsReport.storyboard; sourceTree = "<group>"; };
 		C7021D752570C01A00CFB3EC /* 1127sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1127sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7021D782570C01A00CFB3EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7021D7A2570C01A00CFB3EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		C7146C682592F10B00EB992A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		C7146C6B2592F17800EB992A /* AreaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListViewController.swift; sourceTree = "<group>"; };
 		C7146C6D2592F19F00EB992A /* AreaListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListPresenter.swift; sourceTree = "<group>"; };
-		C7146C6F2592F1C600EB992A /* AreaListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListModel.swift; sourceTree = "<group>"; };
 		C7146C722592F20A00EB992A /* KenDetailsReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenDetailsReportViewController.swift; sourceTree = "<group>"; };
 		C7146C7925930EE500EB992A /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		FEB4676DEECABBC3328104EB /* Pods-1127sample-1127sampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1127sample-1127sampleUITests.release.xcconfig"; path = "Target Support Files/Pods-1127sample-1127sampleUITests/Pods-1127sample-1127sampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,7 +200,6 @@
 		C7146C6A2592F16600EB992A /* エリア一覧 */ = {
 			isa = PBXGroup;
 			children = (
-				C7146C6F2592F1C600EB992A /* AreaListModel.swift */,
 				C7146C6D2592F19F00EB992A /* AreaListPresenter.swift */,
 				C7146C6B2592F17800EB992A /* AreaListViewController.swift */,
 				C7021D7E2570C01A00CFB3EC /* Main.storyboard */,
@@ -212,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				C7146C722592F20A00EB992A /* KenDetailsReportViewController.swift */,
+				C6DF687725A01393007C5BE7 /* KenDetailsReport.storyboard */,
 			);
 			name = "各県詳細レポート画面";
 			path = "各県詳細レポート画面";
@@ -346,6 +346,7 @@
 			files = (
 				C7021D852570C01B00CFB3EC /* LaunchScreen.storyboard in Resources */,
 				C7021D822570C01B00CFB3EC /* Assets.xcassets in Resources */,
+				C6DF687825A01393007C5BE7 /* KenDetailsReport.storyboard in Resources */,
 				C7146C7A25930EE500EB992A /* CustomCell.xib in Resources */,
 				C7021D802570C01A00CFB3EC /* Main.storyboard in Resources */,
 			);
@@ -477,7 +478,6 @@
 			files = (
 				C7146C732592F20A00EB992A /* KenDetailsReportViewController.swift in Sources */,
 				C7146C6C2592F17800EB992A /* AreaListViewController.swift in Sources */,
-				C7146C702592F1C600EB992A /* AreaListModel.swift in Sources */,
 				C7021D792570C01A00CFB3EC /* AppDelegate.swift in Sources */,
 				C7021D7B2570C01A00CFB3EC /* SceneDelegate.swift in Sources */,
 				C7146C692592F10B00EB992A /* CustomCell.swift in Sources */,
