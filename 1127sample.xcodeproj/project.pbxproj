@@ -22,7 +22,6 @@
 		C7146C692592F10B00EB992A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C682592F10B00EB992A /* CustomCell.swift */; };
 		C7146C6C2592F17800EB992A /* AreaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C6B2592F17800EB992A /* AreaListViewController.swift */; };
 		C7146C6E2592F19F00EB992A /* AreaListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C6D2592F19F00EB992A /* AreaListPresenter.swift */; };
-		C7146C702592F1C600EB992A /* AreaListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C6F2592F1C600EB992A /* AreaListModel.swift */; };
 		C7146C732592F20A00EB992A /* KenDetailsReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7146C722592F20A00EB992A /* KenDetailsReportViewController.swift */; };
 		C7146C7A25930EE500EB992A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7146C7925930EE500EB992A /* CustomCell.xib */; };
 /* End PBXBuildFile section */
@@ -71,7 +70,6 @@
 		C7146C682592F10B00EB992A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		C7146C6B2592F17800EB992A /* AreaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListViewController.swift; sourceTree = "<group>"; };
 		C7146C6D2592F19F00EB992A /* AreaListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListPresenter.swift; sourceTree = "<group>"; };
-		C7146C6F2592F1C600EB992A /* AreaListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListModel.swift; sourceTree = "<group>"; };
 		C7146C722592F20A00EB992A /* KenDetailsReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenDetailsReportViewController.swift; sourceTree = "<group>"; };
 		C7146C7925930EE500EB992A /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		FEB4676DEECABBC3328104EB /* Pods-1127sample-1127sampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1127sample-1127sampleUITests.release.xcconfig"; path = "Target Support Files/Pods-1127sample-1127sampleUITests/Pods-1127sample-1127sampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 		C7146C6A2592F16600EB992A /* エリア一覧 */ = {
 			isa = PBXGroup;
 			children = (
-				C7146C6F2592F1C600EB992A /* AreaListModel.swift */,
 				C7146C6D2592F19F00EB992A /* AreaListPresenter.swift */,
 				C7146C6B2592F17800EB992A /* AreaListViewController.swift */,
 				C7021D7E2570C01A00CFB3EC /* Main.storyboard */,
@@ -481,7 +478,6 @@
 			files = (
 				C7146C732592F20A00EB992A /* KenDetailsReportViewController.swift in Sources */,
 				C7146C6C2592F17800EB992A /* AreaListViewController.swift in Sources */,
-				C7146C702592F1C600EB992A /* AreaListModel.swift in Sources */,
 				C7021D792570C01A00CFB3EC /* AppDelegate.swift in Sources */,
 				C7021D7B2570C01A00CFB3EC /* SceneDelegate.swift in Sources */,
 				C7146C692592F10B00EB992A /* CustomCell.swift in Sources */,

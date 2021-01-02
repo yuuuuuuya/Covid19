@@ -15,10 +15,10 @@ struct Covid19ReportStruct {
 
 struct ResponseData: Codable{
     var id: Int
-    var name_ja: String
-    var population: Int
-    var cases: Int
-    var deaths: Int
-    var pcr: Int
-    var severe: Int
+    var name_ja: String /// 県名
+    var population: Int /// 人工
+    var cases: Int      /// 感染者数
+    var deaths: Int     /// 死者
+    var pcr: Int        /// pcr検査数
+    var severe: Int     /// 重傷者数
 }
