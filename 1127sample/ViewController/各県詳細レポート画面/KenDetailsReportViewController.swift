@@ -46,6 +46,18 @@ class KenDetailsReportViewController: UIViewController {
     @IBOutlet weak var pcrLabel: UILabel!
     /// 重症者数ラベル
     @IBOutlet weak var judoLabel: UILabel!
+    /// 県名ラベルheight
+    @IBOutlet weak var kennmeiLabelHeight: NSLayoutConstraint!
+    /// 県名ラベルtop位置
+    @IBOutlet weak var kennmeiLabelTop: NSLayoutConstraint!
+    /// 感染者数ラベルtop位置
+    @IBOutlet weak var kansenshaLabelTop: NSLayoutConstraint!
+    /// 死者数ラベルtop位置
+    @IBOutlet weak var deathesLabelTop: NSLayoutConstraint!
+    /// pcr検査数ラベルtop位置
+    @IBOutlet weak var pcrLabelTop: NSLayoutConstraint!
+    /// 重傷者数ラベルtop位置
+    @IBOutlet weak var judoLabelTop: NSLayoutConstraint!
     
     // MARK : - View life cycle
     override func viewDidLoad() {
@@ -63,6 +75,18 @@ extension KenDetailsReportViewController {
     func setup() {
         setIndicate()
         communicationAPI()
+        labelRayout()
+    }
+    
+    ///ラベルのAutolayout
+    func labelRayout() {
+        let vcFrame = self.view.frame
+        let vcFrameSplit = vcFrame.height / 13
+        kennmeiLabelTop.constant = vcFrameSplit
+        kansenshaLabelTop.constant = vcFrameSplit
+        deathesLabelTop.constant = vcFrameSplit
+        pcrLabelTop.constant = vcFrameSplit
+        judoLabelTop.constant = vcFrameSplit
     }
     
     ///インジケーター設定

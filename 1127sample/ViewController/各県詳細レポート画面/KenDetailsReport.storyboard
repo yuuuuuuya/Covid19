@@ -14,13 +14,92 @@
                     <view key="view" contentMode="scaleToFill" id="dxL-Eu-aMh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="県名:○○" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKZ-H5-d9M">
+                                <rect key="frame" x="146" y="114" width="122" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1sY-JX-yim"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人工:〇〇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggs-Ui-7Oi">
+                                <rect key="frame" x="146" y="188" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="感染者数:〇〇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwt-2Z-eSK">
+                                <rect key="frame" x="146" y="288" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="死者数:〇〇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IG-zP-eVa">
+                                <rect key="frame" x="146" y="367" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pcr:検査数:〇〇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CT-sb-FKy">
+                                <rect key="frame" x="146" y="437" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重傷者数:○○" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ts3-wc-e7i">
+                                <rect key="frame" x="146" y="536" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xKZ-H5-d9M" firstAttribute="centerX" secondItem="dxL-Eu-aMh" secondAttribute="centerX" id="59x-0s-Hft"/>
+                            <constraint firstItem="6IG-zP-eVa" firstAttribute="width" secondItem="xKZ-H5-d9M" secondAttribute="width" id="8Dn-LQ-eNt"/>
+                            <constraint firstItem="ts3-wc-e7i" firstAttribute="width" secondItem="xKZ-H5-d9M" secondAttribute="width" id="8GL-M5-aSt"/>
+                            <constraint firstItem="8CT-sb-FKy" firstAttribute="top" secondItem="6IG-zP-eVa" secondAttribute="bottom" constant="49" id="ApD-L6-J2O"/>
+                            <constraint firstItem="6IG-zP-eVa" firstAttribute="top" secondItem="wwt-2Z-eSK" secondAttribute="bottom" constant="58" id="C7Y-Oa-VBX"/>
+                            <constraint firstItem="Ggs-Ui-7Oi" firstAttribute="height" secondItem="xKZ-H5-d9M" secondAttribute="height" id="ER3-YQ-8BX"/>
+                            <constraint firstItem="Ggs-Ui-7Oi" firstAttribute="top" secondItem="xKZ-H5-d9M" secondAttribute="bottom" constant="53" id="FZz-LX-RTX"/>
+                            <constraint firstItem="8CT-sb-FKy" firstAttribute="height" secondItem="xKZ-H5-d9M" secondAttribute="height" id="GQP-Kk-Yjb"/>
+                            <constraint firstItem="6IG-zP-eVa" firstAttribute="height" secondItem="xKZ-H5-d9M" secondAttribute="height" id="HLa-FX-qBK"/>
+                            <constraint firstItem="8CT-sb-FKy" firstAttribute="centerX" secondItem="dxL-Eu-aMh" secondAttribute="centerX" id="Hhg-Yn-F8c"/>
+                            <constraint firstItem="6IG-zP-eVa" firstAttribute="centerX" secondItem="dxL-Eu-aMh" secondAttribute="centerX" id="KQI-gv-1Pz"/>
+                            <constraint firstItem="Ggs-Ui-7Oi" firstAttribute="width" secondItem="xKZ-H5-d9M" secondAttribute="width" id="MuT-vQ-d3k"/>
+                            <constraint firstItem="wwt-2Z-eSK" firstAttribute="height" secondItem="xKZ-H5-d9M" secondAttribute="height" id="NbR-cq-hbe"/>
+                            <constraint firstItem="wwt-2Z-eSK" firstAttribute="top" secondItem="Ggs-Ui-7Oi" secondAttribute="bottom" constant="79" id="S4T-Vz-2RL"/>
+                            <constraint firstItem="xKZ-H5-d9M" firstAttribute="top" secondItem="bd2-RO-ak5" secondAttribute="top" constant="70" id="Uma-F9-qII"/>
+                            <constraint firstItem="ts3-wc-e7i" firstAttribute="height" secondItem="xKZ-H5-d9M" secondAttribute="height" id="ZLJ-el-efi"/>
+                            <constraint firstItem="ts3-wc-e7i" firstAttribute="top" secondItem="8CT-sb-FKy" secondAttribute="bottom" constant="78" id="fwO-vL-xSS"/>
+                            <constraint firstItem="ts3-wc-e7i" firstAttribute="centerX" secondItem="dxL-Eu-aMh" secondAttribute="centerX" id="gJ4-EX-LsO"/>
+                            <constraint firstItem="Ggs-Ui-7Oi" firstAttribute="centerX" secondItem="dxL-Eu-aMh" secondAttribute="centerX" id="lzZ-3P-ZWU"/>
+                            <constraint firstItem="8CT-sb-FKy" firstAttribute="width" secondItem="xKZ-H5-d9M" secondAttribute="width" id="ogN-Bm-gQa"/>
+                            <constraint firstItem="wwt-2Z-eSK" firstAttribute="centerX" secondItem="dxL-Eu-aMh" secondAttribute="centerX" id="qP1-oj-z0x"/>
+                            <constraint firstItem="wwt-2Z-eSK" firstAttribute="width" secondItem="xKZ-H5-d9M" secondAttribute="width" id="zYk-Bu-3J3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bd2-RO-ak5"/>
                     </view>
+                    <connections>
+                        <outlet property="deathesLabel" destination="6IG-zP-eVa" id="j25-HS-5mU"/>
+                        <outlet property="deathesLabelTop" destination="C7Y-Oa-VBX" id="wbm-dg-TP6"/>
+                        <outlet property="jinkoLabel" destination="Ggs-Ui-7Oi" id="gZo-j7-end"/>
+                        <outlet property="judoLabel" destination="ts3-wc-e7i" id="tUe-Zc-Too"/>
+                        <outlet property="judoLabelTop" destination="fwO-vL-xSS" id="Tpd-VO-oBF"/>
+                        <outlet property="kansenshaLabel" destination="wwt-2Z-eSK" id="gph-lD-tcW"/>
+                        <outlet property="kansenshaLabelTop" destination="S4T-Vz-2RL" id="ef0-Ic-VAB"/>
+                        <outlet property="kennmeiLabel" destination="xKZ-H5-d9M" id="nLJ-JW-Wrb"/>
+                        <outlet property="kennmeiLabelHeight" destination="1sY-JX-yim" id="YFh-gl-cw4"/>
+                        <outlet property="kennmeiLabelTop" destination="Uma-F9-qII" id="z5U-Pd-BJ5"/>
+                        <outlet property="pcrLabel" destination="8CT-sb-FKy" id="GqF-Nu-04z"/>
+                        <outlet property="pcrLabelTop" destination="ApD-L6-J2O" id="nhm-Tp-aal"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAe-xs-Tq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7" y="101"/>
+            <point key="canvasLocation" x="5.7971014492753632" y="100.44642857142857"/>
         </scene>
     </scenes>
 </document>
