@@ -16,10 +16,7 @@ class AreaListViewController: UIViewController {
     
     /// インジケーター
     private let indicator = UIActivityIndicatorView()
-    /// 日付
-    private let dete = Date()
-    ///データフォーマッター
-    private let dateFormatter = DateFormatter()
+    
 
     
     // MARK: - View life cycle
@@ -32,16 +29,21 @@ class AreaListViewController: UIViewController {
     
     /// テーブルビュー
     @IBOutlet weak var myTableView: UITableView!
-    /// 更新ボタン
-    @IBOutlet weak var reloadBtn: UIButton!
     
     // MARK: - IBAction
     
     /// 更新ボタン押下
     @IBAction func tappedReloadListBtn(_ sender: Any) {
         
+        /// 日付
+        let dete = Date()
+        ///データフォーマッター
+        let dateFormatter = DateFormatter()
+        
         dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yyyyMdHm", options: 0, locale: Locale(identifier: "ja_JP"))
+        print((dateFormatter.string(from: dete)))
         self.navigationItem.title = "\(dateFormatter.string(from: dete)):取得"
+        self.navigationItem.backBarButtonItem = .init(title: "", style: .plain, target: nil, action: nil)
         tuushinAPI()
     }
 }

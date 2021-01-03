@@ -29,7 +29,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VKP-Oh-Y3A"/>
+                    <navigationItem key="navigationItem" id="VKP-Oh-Y3A">
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="uFg-sM-N5H">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X4W-28-VHO">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="更新"/>
+                                <connections>
+                                    <action selector="tappedReloadListBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dG0-bO-7Al"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="myTableView" destination="Y4g-Fq-dei" id="OxK-RW-9bc"/>
                     </connections>
