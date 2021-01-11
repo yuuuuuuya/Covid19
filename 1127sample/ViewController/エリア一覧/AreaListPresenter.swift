@@ -21,6 +21,8 @@ class AreaListPresenter: NSObject {
     ///セット
     override init() {
         /// エリア一覧の配列に挿入
+        // TODO: - 不明点
+        ///enumを使い数字ではなく都道府県名で...というお話だったと思うが、Covid19ReportStruct構造体に都道府県名がないので出来ない？
         for i in 1...47 {
             switch i {
             case 1:
@@ -55,6 +57,10 @@ class AreaListPresenter: NSObject {
             }
             do{
                 let decodeData = try JSONDecoder().decode([ResponseData].self, from: data)
+                
+                //TODO: -不明点
+                ///indexfilterを使うと聞こえたが、indexfilterというメソッドはなし。
+                ///indexをfilter？と考えたが、indexで配列から指定しても、どこの県が入ってるかは分からないと考えた方がいいと思い違うのかなと。
                 
                 //レスポンスのidの値とエリア一覧のtodofukenIDの値をマッピング
                 for i in 0...(self.covid19Array.count - 1) {
